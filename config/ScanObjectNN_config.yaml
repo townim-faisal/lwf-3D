@@ -1,0 +1,22 @@
+seen_class : 26
+unseen_class : 11
+total_class : 37
+dataset_path : 'data/ScanObjectNN/'
+saved_model : 'saved_models/ScanObjectNN/'
+
+batch_size : 32
+lr : 1e-4 
+wd : 1e-6
+T: 3.0
+
+pointnet_old_model_path_none: 'saved_models/ScanObjectNN/model_PointNet_old_task_none.pth'
+pointnet_old_model_path_w2v: 'saved_models/ScanObjectNN/model_PointNet_old_task_w2v.pth'
+pointnet_old_model_path_glove: 'saved_models/ScanObjectNN/model_PointNet_old_task_glove.pth'
+
+pointconv_old_model_path_none: 'saved_models/ScanObjectNN/model_PointConv_old_task_none.pth'
+pointconv_old_model_path_w2v: 'saved_models/ScanObjectNN/model_PointConv_old_task_w2v.pth'
+pointconv_old_model_path_glove: 'saved_models/ScanObjectNN/model_PointConv_old_task_glove.pth'
+
+dgcnn_old_model_path_none: 'saved_models/ScanObjectNN/model_DGCNN_old_task_none.pth'
+dgcnn_old_model_path_w2v: 'saved_models/ScanObjectNN/model_DGCNN_old_task_w2v.pth'
+dgcnn_old_model_path_glove: 'saved_models/ScanObjectNN/model_DGCNN_old_task_glove.pth'
