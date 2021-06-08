@@ -4,12 +4,12 @@
 Install necessary packages from `requirements.txt` [file](./requirements.txt).
 
 ## Data
-Semantic embedding for the dataset will be found [here](https://drive.google.com/drive/folders/1rqRyRI_i3MVRd_cLEBlmNNvggGBO-lEl?usp=sharing).
+Semantic embedding for the dataset will be found [here](https://drive.google.com/drive/folders/1rqRyRI_i3MVRd_cLEBlmNNvggGBO-lEl?usp=sharing). You will find the class split in the paper.
 
 ## Model
 Pretrained model of old task: [here](https://drive.google.com/drive/folders/1rfJQXXCOts024vnBisD5ITCaGRSVeKSt?usp=sharing)
 
-Pretrained model of new task: [hare](https://drive.google.com/drive/folders/1mYmwUTHscR3pdP8MJGHGM7bwO1VWlZqy?usp=sharing)
+Pretrained model of new task: [here](https://drive.google.com/drive/folders/1mYmwUTHscR3pdP8MJGHGM7bwO1VWlZqy?usp=sharing)
 
 ## Training and Evaluation
 For each dataset, there is a corresponding configuration files located in `config` folder. Below is the description of configuration file.
@@ -23,18 +23,18 @@ batch_size : batch size
 lr : learning rate
 wd : weighting decay
 T: temperature for KD loss
-pointnet_old_model_path_none: model path for old task with no semantic information using pointnet
-pointnet_old_model_path_w2v: model path for old task with w2v using pointnet
-pointnet_old_model_path_glove: model path for old task with glove using pointnet
-pointconv_old_model_path_none: model path for old task with no semantic information using pointconv
-pointconv_old_model_path_w2v: model path for old task with w2v using pointconv
-pointconv_old_model_path_glove: model path for old task with glove using pointconv
-dgcnn_old_model_path_none: model path for old task with no semantic information using dgcnn
-dgcnn_old_model_path_w2v:  model path for old task with w2v using dgcnn
-dgcnn_old_model_path_glove: model path for old task with glove using dgcnn
+pointnet_old_model_path_none: model path for old task using pointnet (no semantic information)
+pointnet_old_model_path_w2v: model path for old task using pointnet and word2vec
+pointnet_old_model_path_glove: model path for old task using pointnet and glove
+pointconv_old_model_path_none: model path for old task using pointconv (no semantic information)
+pointconv_old_model_path_w2v: model path for old task using pointconv and word2vec
+pointconv_old_model_path_glove: model path for old task using pointconv and glove
+dgcnn_old_model_path_none: model path for old task using dgcnn (no semantic information)
+dgcnn_old_model_path_w2v:  model path for old task using dgcnn and word2vec
+dgcnn_old_model_path_glove: model path for old task using dgcnn and glove
 ```
 
-For training, arguments for each python script are:
+For training and evaluating, arguments for each python script are:
 ```
 --dataset: ModelNet, ScanObjectNN
 --epoch: number of epochs 
