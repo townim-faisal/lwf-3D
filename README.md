@@ -41,6 +41,8 @@ For training, arguments for each python script are:
 --sem: using semantic representation i.e. w2v, glove, none
 ```
 
+## Acknowledgements
+This implementation has been based on these repositories: [PointNet](https://github.com/yanx27/Pointnet_Pointnet2_pytorch), [PointConv](https://github.com/DylanWusee/pointconv_pytorch) and [DGCNN](https://github.com/WangYueFt/dgcnn/tree/master/pytorch).
 
 ## Citation
 ```
